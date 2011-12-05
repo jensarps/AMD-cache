@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>AMD Cache-Plugin Example</title>
+		<script>
+			var require = {
+				baseUrl: 'src',
+                paths: {
+                    cache: '../../cache'
+                }
+			};
+		</script>
+		<script type="text/javascript" src="require.js"></script>	
+		<script type="text/javascript">
+			require(['cache!tellme/tellme'], function(tellme){
+				tellme();
+			});
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
