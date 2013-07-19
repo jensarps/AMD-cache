@@ -74,6 +74,7 @@ define(function () {
           load.fromText(name, cached);
         } else {
           cache.get(url, function (content) {
+            content += '\n //@ sourceURL='+name;
             load.fromText(name, content);
 
             // can't just fall through here, as we
